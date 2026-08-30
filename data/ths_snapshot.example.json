@@ -1,0 +1,9 @@
+{
+  "broker": "tonghuashun",
+  "currency": "CNY",
+  "总资产": 200134.09,
+  "可用金额": 197264.69,
+  "股票市值": 2869.4,
+  "资金余额": 198577.0,
+  "note": "Replace with numbers from your Tonghuashun client (查询 → 资金股票)."
+}
