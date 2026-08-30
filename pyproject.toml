@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asset-aggregator"
+version = "0.1.0"
+description = "Aggregate total assets from Futu and Tonghuashun"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "futu-api>=9.0",
+  "pydantic>=2.0",
+  "pydantic-settings>=2.0",
+  "python-dotenv>=1.0",
+  "requests>=2.31",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+assets = "asset_aggregator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["asset_aggregator*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
